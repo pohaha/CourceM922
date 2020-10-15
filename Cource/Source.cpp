@@ -9,6 +9,7 @@ int main()
 	a.add(b);
 	std::cout << b << std::endl;
 	Gauss(a);
+
 	std::cin.get();
 	return 0;
 }
