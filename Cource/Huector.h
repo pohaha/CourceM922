@@ -10,5 +10,7 @@ public:
 	void add(float& n_data);
 
 	void show();
+
+	Huector();
 };
 
