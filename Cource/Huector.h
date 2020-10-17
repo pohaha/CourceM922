@@ -1,18 +1,42 @@
 #pragma once
-template < typename T>
+#include <cstring>
+#include <iostream>
 
-class Huector
+template < typename T>
+class Vector
 {
 	
 private: 
-	T* data=nullptr;
-	unsigned int size=0;
+	std::size_t size=0;
 
 public:
-	void add(T& n_data);
+	T* data=nullptr;
 
-	void show();
+	//this is a method for adding elements to our vector
+	void add(T& n_data)
+	{
+		T* temp = new T[size + 1];
+		
+		std::memcpy(temp, data, sizeof(T)*size);
+		delete[] data;
+		
+		data = temp;
+		data[size++] = n_data;
+	}
 
-	Huector();
+
+	//this is a method for showing all contained elements
+	void show()
+	{
+		std::cout << "array contents are: " << std::endl;
+		for (int i = 0; i < size; i++)		std::cout << "Element number " << i+1 << " : " << data[i] << std::endl;
+		
+	}
+
+	Vector()
+	{
+
+	}
 };
+
 

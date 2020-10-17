@@ -18,18 +18,9 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Huector.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MyMath.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Huector.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Header.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MyMath.h">
