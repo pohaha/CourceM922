@@ -3,7 +3,7 @@ class Huector
 {
 	
 private:
-	float* data=nullptr;
+	float* data = nullptr;
 	unsigned int size=0;
 
 public:
