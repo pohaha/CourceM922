@@ -1,19 +1,16 @@
 #pragma once
 #include "Huector.h"
 
-//you are a cocksucker!!!!!!!!!
 template <typename T>
-Huector<T> Gauss(Huector<T>& data)
+Vector<T> Gauss(Vector<T>& data)
 {
 	return data;
 }
 
 
 template <typename T>
-Huector<T> iterrationMethod(Huector<T>& data)
+Vector<T> iterrationMethod(Vector<T>& data)
 {
 
 }
-
-//std::vector<string> strings;
 

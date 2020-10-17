@@ -139,12 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Huector.cpp" />
-    <ClCompile Include="MyMath.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h" />
     <ClInclude Include="Huector.h" />
     <ClInclude Include="MyMath.h" />
   </ItemGroup>
