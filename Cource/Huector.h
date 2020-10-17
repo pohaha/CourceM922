@@ -1,18 +1,40 @@
 #pragma once
-template < typename T>
+#include <cstring>
+#include <iostream>
 
+template < typename T>
 class Huector
 {
 	
 private: 
-	T* data=nullptr;
-	unsigned int size=0;
+	std::size_t size=0;
 
 public:
-	void add(T& n_data);
+	T* data=nullptr;
+	void add(T& n_data)
+	{
+		T* temp = new T[size + 1];
+		std::memcpy(temp, data, std::size_t(size));
+		size = size + 1;
+		delete[] data;
+		data = new T[size];
+		std::memcpy(data, temp, std::size_t(size));
+		data[size - 1] = n_data;
+		delete[] temp;
+	}
 
-	void show();
+	void show()
+	{
+		for (int i = 0; i < size; i++)
+		{
+			std::cout << "Element number " << i+1 << " : " << data[i] << std::endl;
+		}
+	}
 
-	Huector();
+	Huector()
+	{
+
+	}
 };
+
 

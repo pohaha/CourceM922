@@ -2,9 +2,18 @@
 #include "Huector.h"
 
 //you are a cocksucker!!!!!!!!!
-Huector Gauss(Huector& data);
+template <typename T>
+Huector<T> Gauss(Huector<T>& data)
+{
+	return data;
+}
 
-Huector iterrationMethod(Huector& data);
 
-std::vector<string> strings;
+template <typename T>
+Huector<T> iterrationMethod(Huector<T>& data)
+{
+
+}
+
+//std::vector<string> strings;
 

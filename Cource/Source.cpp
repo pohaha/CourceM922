@@ -4,11 +4,15 @@
 int main()
 {
 	
-	Huector a;
-	float b=10;
+	Huector<float> a;
+	float b=10,c=22;
+
+	a.add(c);
+	a.show();
 	a.add(b);
-	std::cout << b << std::endl;
+	std::cout <<"added: "<< b << std::endl;
 	Gauss(a);
+	a.show();
 
 	std::cin.get();
 	return 0;
