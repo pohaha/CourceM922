@@ -1,13 +1,15 @@
 #pragma once
+template < typename T>
+
 class Huector
 {
 	
-private:
-	float* data=nullptr;
+private: 
+	T* data=nullptr;
 	unsigned int size=0;
 
 public:
-	void add(float& n_data);
+	void add(T& n_data);
 
 	void show();
 
