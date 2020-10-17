@@ -1,8 +1,9 @@
 #include "Huector.h"
 #include <iostream>
-
-void Huector::add(float& n_data)
+template <typename T>
+void Huector<T>::add(T& n_data)
 {
+	T *temp = new T[size + 1];
 
 
 }
