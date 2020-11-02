@@ -8,12 +8,12 @@ class Vector
 	
 private: 
 	std::size_t size=0;
-
-public:
 	T* data=nullptr;
 
+public:
+
 	//this is a method for adding elements to our vector
-	void add(T& n_data)
+	void add(const T& n_data)
 	{
 		T* temp = new T[size + 1];
 		
@@ -36,6 +36,17 @@ public:
 	Vector()
 	{
 
+	}
+
+	T& operator[](unsigned int index)
+	{
+		if (index < size)
+			return data[index];
+		else
+		{
+			std::cout << "access violation - no such element yet" << std::endl;
+			return data[0];
+		}
 	}
 };
 
