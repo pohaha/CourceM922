@@ -1,8 +1,15 @@
 #include <iostream>
 #include "Huector.h"
 #include "MyMath.h"
+#include "Function.h"
 int main()
 {
+	//function class tests
+
+	Function test_func(")))))()))))");
+	
+	
+	
 	//simple tests for ensuring everything works great
 	Vector<float> TestArray;
 	std::cout << "created <TestArray> object of class Array" << std::endl;

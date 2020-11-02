@@ -139,9 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Users\mouse\Dropbox\code from phone\cource\Function.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Users\mouse\Dropbox\code from phone\cource\Action.h" />
+    <ClInclude Include="..\..\..\..\..\Users\mouse\Dropbox\code from phone\cource\Function.h" />
     <ClInclude Include="Huector.h" />
     <ClInclude Include="MyMath.h" />
   </ItemGroup>

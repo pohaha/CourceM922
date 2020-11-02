@@ -18,12 +18,21 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Users\mouse\Dropbox\code from phone\cource\Function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Huector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MyMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Users\mouse\Dropbox\code from phone\cource\Action.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Users\mouse\Dropbox\code from phone\cource\Function.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
