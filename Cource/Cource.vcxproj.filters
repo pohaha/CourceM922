@@ -35,5 +35,8 @@
     <ClInclude Include="..\..\..\..\..\Users\mouse\Dropbox\code from phone\cource\Function.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
