@@ -6,10 +6,10 @@ template < typename T>
 
 class Vector
 {
-	
-private: 
-	std::size_t size=0;
-	T* data=nullptr;
+
+private:
+	std::size_t size = 0;
+	T* data = nullptr;
 
 public:
 
@@ -17,10 +17,10 @@ public:
 	void add(const T& n_data)
 	{
 		T* temp = new T[size + 1];
-		
-		std::memcpy(temp, data, sizeof(T)*size);
+
+		std::memcpy(temp, data, sizeof(T) * size);
 		delete[] data;
-		
+
 		data = temp;
 		data[size++] = n_data;
 	}
@@ -30,8 +30,8 @@ public:
 	void show()
 	{
 		std::cout << "array contents are: " << std::endl;
-		for (int i = 0; i < size; i++)		std::cout << "Element number " << i+1 << " : " << data[i] << std::endl;
-		
+		for (int i = 0; i < size; i++)		std::cout << "Element number " << i + 1 << " : " << data[i] << std::endl;
+
 	}
 
 	Vector()
@@ -49,16 +49,16 @@ public:
 			return data[0];
 		}
 	}
-	
-	friend Vector<T> operator+ (Vector<T> &one, Vector<T> &two);
-	friend Vector<T> operator* ( Vector <T> &one, const float & )
+
+	friend Vector<T> operator+ (Vector<T>& one, Vector<T>& two);
+	friend Vector<T> operator* (Vector <T>& one, const float&);
 };
 
 template < typename T>
 Vector<T> operator+ (Vector<T> &one, Vector<T> &two)
 {
 	if (one.size != two.size) {
-		std::cout << "Error!" << endl;
+		std::cout << "Error!" << std::endl;
 		return one;
 	}
 	for (int i = 0; i < one.size; i++)

@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Huector.h"
 #include "MyMath.h"
-#include "Function.h"
 #include "Matrix.h"
 int main()
 {
@@ -72,7 +71,7 @@ int main()
 	}
 
 	//gauss testing
-	Gauss(TestArray);
+	//Gauss(TestArray);
 
 
 	//iterrations testing
