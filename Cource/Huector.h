@@ -3,6 +3,7 @@
 #include <iostream>
 
 template < typename T>
+
 class Vector
 {
 	
@@ -48,6 +49,33 @@ public:
 			return data[0];
 		}
 	}
+	
+	friend Vector<T> operator+ (Vector<T> &one, Vector<T> &two);
+	friend Vector<T> operator* ( Vector <T> &one, const float & )
+};
+
+template < typename T>
+Vector<T> operator+ (Vector<T> &one, Vector<T> &two)
+{
+	if (one.size != two.size) {
+		std::cout << "Error!" << endl;
+		return one;
+	}
+	for (int i = 0; i < one.size; i++)
+	{
+		one[i]=one[i] + two[i];
+	}
+	return one;
+};
+
+
+template < typename T>
+Vector<T> operator* (Vector <T>& one, const float& number)
+{
+	for(int i = 0; i < one.size; i++) {
+		one[i]=one[i] * number;
+	}
+	return one;
 };
 
 
